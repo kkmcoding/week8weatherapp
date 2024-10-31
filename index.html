@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App Number 1</title>
+    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="weather-app">
+      <header>
+        <form id="search-form" class="search-form">
+          <input
+            type="text"
+            placeholder="Enter for a city"
+            autocomplete="off"
+            autofocus="on"
+            class="search-field"
+            id="search-field"
+          />
+          <input type="submit" value="Search" class="search-submit" />
+        </form>
+      </header>
+      <main>
+        <div id="today"></div>
+        <div id="time"></div>
+        <div id="icon"></div>
+        <div id="city"></div>
+        <span id="temp">
+          <span id="temperature-now"></span>
+          <span id="tempsymbol">℃</span>
+        </span>
+        <span id="blows">Wind</span> 
+        <span id="heat">Humidity</span>
+        <div>
+        <span id="speed"></span>
+        <span class="wind-blows">km/h</span>
+        <span id="humid"></span>
+        <span id="percentage">%</span>
+        </div>
+      </main>
+    </br>
+      <footer>
+        This project was coded by
+        <a href="https://github.com/kkmcoding">Kutlwano Moshugi</a>, is
+        open-sourced on
+        <a href="https://github.com/kkmcoding/weatherappfromscratch">GitHub</a>
+        and hosted on
+        <a href="https://practiseweatherapp1.netlify.app/">Netlify</a>
+      </footer>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
